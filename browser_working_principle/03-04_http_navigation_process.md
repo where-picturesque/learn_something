@@ -10,13 +10,14 @@
 6. 发起http请求（携带请求头行、请求头、请求体）
 7. 服务器处理HTTP 请求流程
 
-![图片](https://user-images.githubusercontent.com/31262456/145748499-63ad7313-3ebf-4849-ab72-bf972775ebde.png)
+![图片](https://user-images.githubusercontent.com/31262456/145921750-016af60a-0202-4734-a5fd-cfe5c1068073.png)
 
 服务器处理HTTP 请求流程：
 1. 返回请求；响应行（协议版本、状态码）、响应头、响应体 
 2. 重定向：响应头中的Location字段表明重定向地址，开始重新导航，重新开始步骤3
 3. 断开TCP连接
-![图片](https://user-images.githubusercontent.com/31262456/145748543-915c5fda-b0c3-4996-961f-ccc2c486a4da.png)
+![图片](https://user-images.githubusercontent.com/31262456/145921636-766005ea-b7d1-4418-ab22-33f50cb7266e.png)
+
 一旦服务器向客户端返回了请求数据，它就要关闭 TCP 连接
 
 如果浏览器或者服务器在其头信息中加入了：Connection:Keep-Alive 
